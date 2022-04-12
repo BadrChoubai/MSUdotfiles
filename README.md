@@ -1,6 +1,6 @@
 # Easy-Up
 
-A CLI interface for getting a proper development environment installed on your computer. I created this for Students
+A CLI interface for getting a proper development environment installed on your computer.  In development for and by Students
 at MSU Denver.
 
 ## How it works
