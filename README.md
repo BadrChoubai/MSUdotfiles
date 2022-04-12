@@ -1,13 +1,11 @@
 # Easy-Up
 
-A CLI interface for getting a proper development environment installed on your computer.  In development for and by Students
-at MSU Denver.
+In development by and for students at MSU Denver.
 
 ## How it works
 
-This tool lets students set up a development environment on their machine. It utilizes Homebrew (on MacOS) and
-apt (on Linux). Personally, I don't care to maintain a Windows Version and anyone willing to, can make contributions
-to the project on GitHub.
+This tool lets students set up a development environment on their machine. Development is currently aimed at supporting
+first-year CS Students on MacOS, with plans to extend the tool to work on Linux and Windows.
 
 If you'd like to use it on Windows, I suggest setting up Windows Subsystem for Linux (wsl) on your machine
 and running the install scripts on it.

@@ -4,7 +4,7 @@ BREW_CMD="$(command -v brew)"
 
 function _brew {
     brew tap Homebrew/bundle
-    brew bundle --file="$HOME/easy-up/homebrew/Brewfile"
+    brew bundle --file="$HOME/MSUdotfiles/darwin/Brewfile"
 } 
 
 
@@ -25,4 +25,4 @@ case "$OSTYPE" in
             brew bundle --file="$HOME/easy-up/homebrew/Brewfile"
         fi 
         ;;
-    esac
+esac
