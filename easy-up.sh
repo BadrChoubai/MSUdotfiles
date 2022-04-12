@@ -2,10 +2,6 @@
 
 BREW_CMD="$(command -v brew)"
 
-function _brew {
-    brew tap Homebrew/bundle
-    brew bundle --file="$HOME/MSUdotfiles/darwin/Brewfile"
-} 
 
 
 case "$OSTYPE" in
@@ -22,7 +18,7 @@ case "$OSTYPE" in
             brew tap Homebrew/bundle
 
             echo "Installing applications and programming languages"
-            brew bundle --file="$HOME/easy-up/homebrew/Brewfile"
+            brew bundle --file="$HOME/MSUdotfiles/homebrew/Brewfile"
         fi 
         ;;
 esac

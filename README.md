@@ -44,3 +44,9 @@ sudo chmod +x ./easy-up.sh
     - Python
     - Java / JDK
     - C# (.Net)
+
+
+# Things I'd like to keep in mind
+
+1. What if a student already has an existing setup, but it doesn't work.
+    - Can we build this tool so that it can purge existing files/folders and reset them with this tool?
