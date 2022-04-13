@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 BREW_CMD="$(command -v brew)"
-
+MSU_DOTFILES="$HOME/MSUdotfiles/"
 
 
 case "$OSTYPE" in
@@ -18,7 +18,7 @@ case "$OSTYPE" in
             brew tap Homebrew/bundle
 
             echo "Installing applications and programming languages"
-            brew bundle --file="$HOME/MSUdotfiles/homebrew/Brewfile"
+            brew bundle --file="$MSU_DOTFILES/darwin/Brewfile"
         fi 
         ;;
 esac
