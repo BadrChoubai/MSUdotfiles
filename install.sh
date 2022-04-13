@@ -3,6 +3,33 @@
 BREW_CMD="$(command -v brew)"
 MSU_DOTFILES="$HOME/MSUdotfiles/"
 
+: " Which languages would you like to install? 
+    Example format: languages=(python dotnet-sdk java)
+
+    Keep in mind that some languages require other packages to be installed prior to installation.
+"
+languages=(python)
+
+
+: '
+    Parse passed in arguments: These flags will be implemented soon.
+' 
+while test $# -gt 0; do
+    case "$1" in
+        -d|--down)
+            echo "Tearing down installed packages"
+            # TODO: Implement teardown script
+            shift
+            ;;
+        -s|--skip-brew)
+            echo "Skipping homebrew installation"
+            : " TODO: Implement skip of homebrew installation (User knows they already have it
+                installed on their machine) 
+            "
+            shift
+            ;;
+    esac
+done
 
 case "$OSTYPE" in
     darwin*)
@@ -18,7 +45,11 @@ case "$OSTYPE" in
             brew tap Homebrew/bundle
 
             echo "Installing applications and programming languages"
-            brew bundle --file="$MSU_DOTFILES/darwin/Brewfile"
+            if [[ -e "$MSU_DOTFILES/darwin/Brewfile" ]]; then
+                brew bundle --file="$MSU_DOTFILES/darwin/Brewfile"
+            fi
         fi 
+        ;;
+    linux-gnu)
         ;;
 esac

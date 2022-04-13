@@ -1,13 +1,8 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-
-
-brew "python@3.7"
-brew "python@3.8"
-brew "python@3.9"
-
+tap "homebrew/services"
 brew "stow"
-
 cask "visual-studio-code"
 
